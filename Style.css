@@ -1,5 +1,5 @@
 body{
-/*background: linear-gradient(to right,gray,black);*/
+background: linear-gradient(to right,gray,black);
 }
 header{
     background: linear-gradient(to right,gray,black);
@@ -82,4 +82,239 @@ color: white;
     color: yellow;
 }
 
-/*about me Section*/
+                                    /*about me Section*/
+
+
+
+/* General Section Styling */
+#about_me {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    color: white;
+    padding: 50px;
+    background:linear-gradient(to right,black,gray);
+}
+
+/* Main Container */
+#aboutme_body {
+
+    display: flex;
+    align-items: center;
+    gap: 500px;
+    max-width:100%;
+    width: 100%;
+
+}
+
+/* Left Section - Image */
+.image-section img {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #2488c8 30%, #0e4a75 70%);
+    position: relative;
+    left: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 50px rgba(36, 136, 200, 0.7); /* Adjusted glow effect */
+}
+
+/* Right Section - Content */
+.content-section {
+    flex: 1;
+}
+
+/* Hi Text */
+.hi {
+
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* Name */
+.content-section b {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+/* Bio Text */
+.bio-text {
+    font-size: 24px;
+    color: lightgray;
+    margin-top: 10px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+/* Highlighted Text */
+.bio-text mark {
+    background: none;
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Social Links Container */
+.social-container {
+    margin-top: 20px;
+}
+
+/* Main Socials */
+.main-socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Social Icons */
+.main-socials img,
+.additional-socials img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.main-socials img:hover,
+.additional-socials img:hover {
+    transform: scale(1.1);
+}
+
+/* Hire Me Button */
+.main-socials button {
+    background: linear-gradient(to right , black, #ffffff, #a6a6a6);
+    color: black;
+    border: none;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: relative;
+    top: 150px;
+    right: 100px;
+
+}
+
+.main-socials button:hover {
+    background: linear-gradient(to right, #ffcc00, #ff9900);
+}
+
+/* Additional Socials */
+.additional-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+
+                                            /*Projects Section*/
+
+
+
+/* General Styles */
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    background: #0d0d0d;*/
+/*    color: white;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    text-align: center;*/
+/*}*/
+
+
+
+.projects-section{
+    position: relative;
+    top: 100%;
+    background: linear-gradient(to right,black,cornflowerblue,deepskyblue);
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    margin: 20px 0;
+    text-transform: uppercase;
+   text-align: center;
+}
+
+.section-title span {
+    color: #f39c12;
+}
+
+/* Project Containers */
+.project {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Project Titles */
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #f1c40f;
+}
+
+/* Images */
+.project-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-images img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-images img:hover {
+    transform: scale(1.1);
+}
+
+/* GitHub Link */
+.github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.github-link img {
+    width: 25px;
+    height: 25px;
+}
+
+.github-link:hover {
+    background: #f39c12;
+}
