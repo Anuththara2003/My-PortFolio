@@ -1,0 +1,85 @@
+body{
+/*background: linear-gradient(to right,gray,black);*/
+}
+header{
+    background: linear-gradient(to right,gray,black);
+}
+
+
+/*home and hero section*/
+#header nav img  {
+
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    position: relative;
+    top:20px;
+    left: 15px;
+    margin:auto;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top:30px;
+
+}
+
+
+
+nav ul li {
+    display: inline;
+
+}
+
+nav ul li  a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    font-family: Inria Sans, sans-serif;
+    font-weight: bold;
+
+
+}
+#Hero{
+    color: white;
+    font-size: 40px;
+    font-family: Calibri;
+    background: url("../My-PortFolio/assets/Home/homepage.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+
+
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+        text-align: center; /* Centers text inside */
+        height: 100vh; /* Full viewport height */
+
+
+    #Hero div {
+        max-width: 800px; /* Adjust width for better readability */
+    }
+
+
+}
+
+#Hero p{
+
+color: white;
+    font-size: 30px;
+    font-family: Calibri;
+
+}
+.name{
+    font-family: Calibri;
+    font-size: 50px;
+    color: yellow;
+}
+
+/*about me Section*/

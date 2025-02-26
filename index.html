@@ -2,13 +2,15 @@
 <html lang="en">
 
     <head>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet " href="lib/normalize.css">
         <meta charset="UTF-8">
         <meta name="keywords" content="Software Engineer, Web Development, Java, JavaFX, MySQL, Portfolio, Sandaru Anuththara">
         <meta name="description" content="Welcome to my portfolio website! I am Sandaru Anuththara, a passionate software engineering student specializing in Java, JavaFX, MySQL, and web development.">
         <meta name="author" content="Sandaru Anuththara">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                        <!-- Open Graph Meta Tags (For social media sharing) -->
+                                 <!-- Open Graph Meta Tags (For social media sharing) -->
 
         <meta property="og:title" content="Sandaru Anuththara - Software Engineer Portfolio">
         <meta property="og:description" content="Explore my projects, skills, and achievements in software engineering, Java development, and web design.">
@@ -18,7 +20,8 @@
         <meta property="og:url" content="https://https://https://www.facebook.com/sandaru.anuththara">
         <meta property="og:type" content="website">
 
-                                                    <!-- Twitter Meta Tags -->
+
+                                    <!-- Twitter Meta Tags -->
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Sandaru Anuththara - Software Engineer Portfolio">
@@ -39,25 +42,27 @@
                                               <!-- Navigation part -->
       <nav>
           <img src="assets/Home/Sp-Logo.png" alt="" width="40" height="40" title="PageLogo">
-          <a href="#header">Home</a>
-          <a href="#about">AboutMe</a>
-          <a href="#projects">Projects</a>
-          <a href="#tools">Skills</a>
-          <a href="#activity">Activity</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#assignment">Assignment</a>
-          <a href="#contact">Contact</a>
+
+          <ul>
+          <li><a href="#header">Home</a></li>
+              <li> <a href="#about">AboutMe</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li> <a href="#tools">Skills</a></li>
+              <li><a href="#activity">Activity</a></li>
+              <li> <a href="#gallery">Gallery</a></li>
+              <li><a href="#assignment">Assignment</a></li>
+              <li> <a href="#contact">Contact</a></li>
+          </ul>
       </nav>
       <br>
       <br>
   </header>
                                             <!-- Hero Section -->
-<section>
+<section id="Hero">
     <div>
-    <img  alt="" src="assets/Home/BackgroundImage" width="300" height="100" title="BackgroundImage">
-        <br>
-        <br>
-        <b>HELLO, <mark>WELCOME</mark> HERE</b>
+
+
+        <b>HELLO,<span class="name"> WELCOME</span> HERE</b>
      <p>
                             Beyond technical work, I enjoy collaborating with teams,<br>
                    as I believe the best solutions arise from shared creativity and collective effort.  <br>
@@ -67,7 +72,7 @@
     </div>
 </section>
                                                     <!-- About Me -->
-<section>
+<section id="about me" >
     <div>
         <img  alt="" id="about" src="assets/About%20Me/MyImage" width="200" height="200" title="MyPhoto">
         <br>
