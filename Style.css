@@ -239,6 +239,7 @@ color: white;
 
 
 .projects-section{
+
     position: relative;
     top: 100%;
     background: linear-gradient(to right,black,cornflowerblue,deepskyblue);
@@ -258,6 +259,7 @@ color: white;
 
 /* Project Containers */
 .project {
+    height: 800px;
     background: #1a1a1a;
     padding: 20px;
     margin: 20px auto;
@@ -276,6 +278,7 @@ color: white;
 
 /* Images */
 .project-images {
+    height: 375px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -283,8 +286,8 @@ color: white;
 }
 
 .project-images img {
-    width: 150px;
-    height: 100px;
+    width: 500px;
+    height: 300px;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
@@ -295,11 +298,12 @@ color: white;
 
 /* GitHub Link */
 .github-link {
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    margin-top: 15px;
+    margin-top: 250px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
