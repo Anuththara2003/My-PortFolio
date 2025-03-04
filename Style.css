@@ -2,7 +2,8 @@ body{
 background: linear-gradient(to right,gray,black);
 }
 header{
-    background: linear-gradient(to right,gray,black);
+    background: linear-gradient(to right,darkturquoise,darkblue);
+
 }
 
 
@@ -46,6 +47,8 @@ nav ul li  a{
 
 
 }
+
+
 #Hero{
     color: white;
     font-size: 40px;
@@ -96,7 +99,7 @@ color: white;
     background: black;
     color: white;
     padding: 50px;
-    background:linear-gradient(to right,black,gray);
+    background:linear-gradient(to right,black,black,gray);
 }
 
 /* Main Container */
@@ -189,12 +192,16 @@ color: white;
 
 .main-socials img:hover,
 .additional-socials img:hover {
+    background: linear-gradient(to right , cornsilk,darkgray);
+    border-radius:  360px ;
+    /*box-shadow:white;*/
     transform: scale(1.1);
 }
 
 /* Hire Me Button */
-.main-socials button {
-    background: linear-gradient(to right , black, #ffffff, #a6a6a6);
+.main-socials button{
+   background: white;
+
     color: black;
     border: none;
     padding: 8px 20px;
@@ -210,7 +217,7 @@ color: white;
 }
 
 .main-socials button:hover {
-    background: linear-gradient(to right, #ffcc00, #ff9900);
+    background: linear-gradient(to right,slategrey,darkslategrey);
 }
 
 /* Additional Socials */
@@ -322,3 +329,5 @@ color: white;
 .github-link:hover {
     background: #f39c12;
 }
+
+                                    /*Skills Section*/
