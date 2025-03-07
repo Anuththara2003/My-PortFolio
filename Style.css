@@ -524,3 +524,57 @@ h3 {
 
                                         /*Gallery Section*/
 
+
+/* Section Background */
+section {
+    background: linear-gradient(to right,black , gray,gray);
+    padding: 50px 20px;
+    /*color: #fff;*/
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Gallery Title */
+#gallery {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /*background: linear-gradient(to right, #fff, #dcdcdc);*/
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Description */
+pre {
+    font-size: 14px;
+    color: #cfd8dc;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px;
+
+    text-align: center;
+}
+
+/* Highlighted text in the description */
+pre span {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Gallery Images */
+section img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 8px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover Effect */
+section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.6);
+}
+
