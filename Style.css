@@ -448,3 +448,79 @@ h3 {
     font-weight: bold;
     font-style: italic;
 }
+
+                        /*Assignment section*/
+
+
+/* Section Background */
+#assignments {
+    text-align: center;
+    padding: 50px 20px;
+    background:linear-gradient(to  right ,black,gray,gray);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+#assignments h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+#assignments h2 span {
+    color: #b300ff;
+}
+
+/* Grid Layout */
+.assignment-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Assignment Card */
+.assignment-item {
+    background: rgba(20, 20, 30, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assignment-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(179, 0, 255, 0.6);
+}
+
+/* Assignment Image */
+.assignment-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 8px rgba(0, 150, 255, 0.6));
+}
+
+/* Icon Container */
+.assignment-item .icons {
+    margin-top: 12px;
+}
+
+/* Icons */
+.assignment-item .icons a img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    opacity: 0.8;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.assignment-item .icons a img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+                                        /*Gallery Section*/
+
