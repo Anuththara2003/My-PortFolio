@@ -800,80 +800,80 @@ pre span {
                                     /*!* Gallery Images *!*/
 
 
-/*section img {*/
-/*    width: 140px;*/
-/*    height: 140px;*/
-/*    object-fit: cover;*/
-/*    border-radius: 15px;*/
-/*    margin: 8px;*/
-/*    transition: transform 0.4s, box-shadow 0.4s;*/
-/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);*/
-/*}*/
+section img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 8px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
 
-/*!* Hover Effect *!*/
-/*section img:hover {*/
-/*    transform: scale(1.1);*/
-/*    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.6);*/
-/*}*/
+/* Hover Effect */
+section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.6);
+}
 
-/*!* Media Query for Tablet and Smaller Screens *!*/
-/*@media screen and (max-width: 768px) {*/
-/*    !* Gallery Title *!*/
-/*    #gallery {*/
-/*        font-size: 24px;*/
-/*    }*/
+/* Media Query for Tablet and Smaller Screens */
+@media screen and (max-width: 768px) {
+    /* Gallery Title */
+    #gallery {
+        font-size: 24px;
+    }
 
-/*    !* Description *!*/
-/*    pre {*/
-/*        font-size: 13px;*/
-/*        margin: 15px auto;*/
-/*        max-width: 700px;*/
-/*    }*/
+    /* Description */
+    pre {
+        font-size: 13px;
+        margin: 15px auto;
+        max-width: 700px;
+    }
 
-/*    !* Gallery Images *!*/
-/*    section img {*/
-/*        width: 120px;*/
-/*        height: 120px;*/
-/*    }*/
+    /* Gallery Images */
+    section img {
+        width: 120px;
+        height: 120px;
+    }
 
-/*    !* Adjust padding of the section *!*/
-/*    section {*/
-/*        padding: 40px 15px;*/
-/*    }*/
-/*}*/
+    /* Adjust padding of the section */
+    section {
+        padding: 40px 15px;
+    }
+}
 
-/*!* Media Query for Mobile Devices *!*/
-/*@media screen and (max-width: 480px) {*/
-/*    !* Gallery Title *!*/
-/*    #gallery {*/
-/*        font-size: 20px;*/
-/*    }*/
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+    /* Gallery Title */
+    #gallery {
+        font-size: 20px;
+    }
 
-/*    !* Description *!*/
-/*    pre {*/
-/*        font-size: 12px;*/
-/*        margin: 10px auto;*/
-/*        max-width: 90%;*/
-/*        padding: 0 10px;*/
-/*    }*/
+    /* Description */
+    pre {
+        font-size: 12px;
+        margin: 10px auto;
+        max-width: 90%;
+        padding: 0 10px;
+    }
 
-/*    !* Gallery Images *!*/
-/*    section img {*/
-/*        width: 100px;*/
-/*        height: 100px;*/
-/*    }*/
+    /* Gallery Images */
+    section img {
+        width: 100px;
+        height: 100px;
+    }
 
-/*    !* Adjust section padding *!*/
-/*    section {*/
-/*        padding: 30px 10px;*/
-/*    }*/
+    /* Adjust section padding */
+    section {
+        padding: 30px 10px;
+    }
 
-/*    !* Stack the images vertically *!*/
-/*    section img {*/
-/*        margin: 5px auto;*/
-/*        display: block;*/
-/*    }*/
-/*}*/
+    /* Stack the images vertically */
+    section img {
+        margin: 5px auto;
+        display: block;
+    }
+}
 
 /*                            !*Activity Section*!*/
 
