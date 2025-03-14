@@ -877,155 +877,155 @@ section img:hover {
 
 /*                            !*Activity Section*!*/
 
-/*!* Activity Section *!*/
+/* Activity Section */
 
-/*!* Section Background *!*/
-/*section {*/
-/*    background: linear-gradient(to bottom, black, #0a3d62);*/
-/*    padding: 50px 20px;*/
-/*    color: white;*/
-/*    font-family: Arial, sans-serif;*/
-/*    text-align: center;*/
-/*}*/
+/* Section Background */
+section {
+    background: linear-gradient(to bottom, black, #0a3d62);
+    padding: 50px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
-/*!* Heading *!*/
-/*#activity {*/
-/*    font-size: 28px;*/
-/*    font-weight: bold;*/
-/*    letter-spacing: 2px;*/
-/*    text-transform: uppercase;*/
-/*}*/
+/* Heading */
+#activity {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-/*!* Colored word "ACTIVITY" *!*/
-/*#activity::after {*/
-/*    content: '';*/
-/*}*/
+/* Colored word "ACTIVITY" */
+#activity::after {
+    content: '';
+}
 
-/*#activity {*/
-/*    color: #fff;*/
-/*}*/
+#activity {
+    color: #fff;
+}
 
-/*#activity::before {*/
-/*    content: "WANNA SEE MY ";*/
-/*}*/
+#activity::before {
+    content: "WANNA SEE MY ";
+}
 
-/*#activity::after {*/
-/*    content: "ACTIVITY";*/
-/*    color: #b388eb;*/
-/*}*/
+#activity::after {
+    content: "ACTIVITY";
+    color: #b388eb;
+}
 
-/*#activity::after {*/
-/*    content: " SIDE ?";*/
-/*    color: #fff;*/
-/*}*/
+#activity::after {
+    content: " SIDE ?";
+    color: #fff;
+}
 
-/*!* Subheadings *!*/
-/*h5 {*/
-/*    margin: 30px 0 10px;*/
-/*    font-size: 16px;*/
-/*    letter-spacing: 1px;*/
-/*}*/
+/* Subheadings */
+h5 {
+    margin: 30px 0 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
 
-/*!* Images *!*/
-/*section img {*/
-/*    width: 160px;*/
-/*    height: 160px;*/
-/*    object-fit: cover;*/
-/*    border-radius: 50%;*/
-/*    border: 4px solid #fff;*/
-/*    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);*/
-/*    margin-bottom: 15px;*/
-/*    transition: transform 0.3s, box-shadow 0.3s;*/
-/*}*/
+/* Images */
+section img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-/*!* Hover effect on images *!*/
-/*section img:hover {*/
-/*    transform: scale(1.1);*/
-/*    box-shadow: 0 6px 25px rgba(0, 150, 255, 0.7);*/
-/*}*/
+/* Hover effect on images */
+section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(0, 150, 255, 0.7);
+}
 
-/*!* Buttons *!*/
-/*button {*/
-/*    background-color: #ffeb3b;*/
-/*    border: none;*/
-/*    padding: 10px 20px;*/
-/*    margin-top: 5px;*/
-/*    border-radius: 50px;*/
-/*    font-weight: bold;*/
-/*    cursor: pointer;*/
-/*    transition: background-color 0.3s, transform 0.3s;*/
-/*}*/
+/* Buttons */
+button {
+    background-color: #ffeb3b;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-/*!* Hover effect on buttons *!*/
-/*button:hover {*/
-/*    background-color: #ffc107;*/
-/*    transform: scale(1.05);*/
-/*}*/
+/* Hover effect on buttons */
+button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
 
-/*!* Media Query for Tablet and Smaller Screens *!*/
-/*@media screen and (max-width: 768px) {*/
-/*    !* Adjust heading font size *!*/
-/*    #activity {*/
-/*        font-size: 24px;*/
-/*    }*/
+/* Media Query for Tablet and Smaller Screens */
+@media screen and (max-width: 768px) {
+    /* Adjust heading font size */
+    #activity {
+        font-size: 24px;
+    }
 
-/*    !* Adjust subheading font size *!*/
-/*    h5 {*/
-/*        font-size: 14px;*/
-/*    }*/
+    /* Adjust subheading font size */
+    h5 {
+        font-size: 14px;
+    }
 
-/*    !* Adjust image size *!*/
-/*    section img {*/
-/*        width: 140px;*/
-/*        height: 140px;*/
-/*    }*/
+    /* Adjust image size */
+    section img {
+        width: 140px;
+        height: 140px;
+    }
 
-/*    !* Adjust button padding *!*/
-/*    button {*/
-/*        padding: 8px 16px;*/
-/*    }*/
+    /* Adjust button padding */
+    button {
+        padding: 8px 16px;
+    }
 
-/*    !* Adjust section padding *!*/
-/*    section {*/
-/*        padding: 40px 15px;*/
-/*    }*/
-/*}*/
+    /* Adjust section padding */
+    section {
+        padding: 40px 15px;
+    }
+}
 
-/*!* Media Query for Mobile Devices *!*/
-/*@media screen and (max-width: 480px) {*/
-/*    !* Adjust heading font size *!*/
-/*    #activity {*/
-/*        font-size: 20px;*/
-/*    }*/
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+    /* Adjust heading font size */
+    #activity {
+        font-size: 20px;
+    }
 
-/*    !* Adjust subheading font size *!*/
-/*    h5 {*/
-/*        font-size: 12px;*/
-/*    }*/
+    /* Adjust subheading font size */
+    h5 {
+        font-size: 12px;
+    }
 
-/*    !* Adjust image size *!*/
-/*    section img {*/
-/*        width: 120px;*/
-/*        height: 120px;*/
-/*    }*/
+    /* Adjust image size */
+    section img {
+        width: 120px;
+        height: 120px;
+    }
 
-/*    !* Adjust button size *!*/
-/*    button {*/
-/*        padding: 6px 12px;*/
-/*    }*/
+    /* Adjust button size */
+    button {
+        padding: 6px 12px;
+    }
 
-/*    !* Adjust section padding *!*/
-/*    section {*/
-/*        padding: 30px 10px;*/
-/*    }*/
+    /* Adjust section padding */
+    section {
+        padding: 30px 10px;
+    }
 
-/*    !* Stack elements vertically *!*/
-/*    section div {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*    }*/
-/*}*/
+    /* Stack elements vertically */
+    section div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /*                            !*Contact*!*/
 /*!* Responsive Design *!*/
