@@ -1027,104 +1027,104 @@ button:hover {
     }
 }
 
-/*                            !*Contact*!*/
-/*!* Responsive Design *!*/
-/*@media screen and (max-width: 1024px) {*/
-/*    section div {*/
-/*        width: 90%;*/
-/*        padding: 20px;*/
-/*    }*/
+                            /*Contact*/
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    section div {
+        width: 90%;
+        padding: 20px;
+    }
 
-/*    #contact {*/
-/*        font-size: 35px;*/
-/*    }*/
+    #contact {
+        font-size: 35px;
+    }
 
-/*    section input[type="text"] {*/
-/*        width: 90%;*/
-/*        font-size: 14px;*/
-/*    }*/
+    section input[type="text"] {
+        width: 90%;
+        font-size: 14px;
+    }
 
-/*    section button {*/
-/*        font-size: 18px;*/
-/*        padding: 8px 25px;*/
-/*    }*/
-/*}*/
+    section button {
+        font-size: 18px;
+        padding: 8px 25px;
+    }
+}
 
-/*@media screen and (max-width: 768px) {*/
-/*    section div {*/
-/*        width: 95%;*/
-/*        padding: 15px;*/
-/*    }*/
+@media screen and (max-width: 768px) {
+    section div {
+        width: 95%;
+        padding: 15px;
+    }
 
-/*    #contact {*/
-/*        font-size: 30px;*/
-/*    }*/
+    #contact {
+        font-size: 30px;
+    }
 
-/*    section input[type="text"] {*/
-/*        width: 100%;*/
-/*        font-size: 14px;*/
-/*        padding: 8px;*/
-/*    }*/
+    section input[type="text"] {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
 
-/*    section button {*/
-/*        font-size: 16px;*/
-/*        padding: 8px 20px;*/
-/*    }*/
+    section button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
 
-/*    section h4 {*/
-/*        font-size: 18px;*/
-/*    }*/
+    section h4 {
+        font-size: 18px;
+    }
 
-/*    section p {*/
-/*        font-size: 14px;*/
-/*    }*/
+    section p {
+        font-size: 14px;
+    }
 
-/*    section img[title="ContactImage"] {*/
-/*        width: 100px;*/
-/*        height: 100px;*/
-/*    }*/
+    section img[title="ContactImage"] {
+        width: 100px;
+        height: 100px;
+    }
 
-/*    section a img {*/
-/*        width: 25px;*/
-/*        height: 25px;*/
-/*    }*/
-/*}*/
+    section a img {
+        width: 25px;
+        height: 25px;
+    }
+}
 
-/*@media screen and (max-width: 480px) {*/
-/*    section div {*/
-/*        width: 100%;*/
-/*        padding: 10px;*/
-/*    }*/
+@media screen and (max-width: 480px) {
+    section div {
+        width: 100%;
+        padding: 10px;
+    }
 
-/*    #contact {*/
-/*        font-size: 25px;*/
-/*    }*/
+    #contact {
+        font-size: 25px;
+    }
 
-/*    section input[type="text"] {*/
-/*        font-size: 12px;*/
-/*        padding: 6px;*/
-/*    }*/
+    section input[type="text"] {
+        font-size: 12px;
+        padding: 6px;
+    }
 
-/*    section button {*/
-/*        font-size: 14px;*/
-/*        padding: 6px 15px;*/
-/*    }*/
+    section button {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
 
-/*    section h4 {*/
-/*        font-size: 16px;*/
-/*    }*/
+    section h4 {
+        font-size: 16px;
+    }
 
-/*    section p {*/
-/*        font-size: 12px;*/
-/*    }*/
+    section p {
+        font-size: 12px;
+    }
 
-/*    section img[title="ContactImage"] {*/
-/*        width: 80px;*/
-/*        height: 80px;*/
-/*    }*/
+    section img[title="ContactImage"] {
+        width: 80px;
+        height: 80px;
+    }
 
-/*    section a img {*/
-/*        width: 20px;*/
-/*        height: 20px;*/
-/*    }*/
-/*}*/
+    section a img {
+        width: 20px;
+        height: 20px;
+    }
+}
