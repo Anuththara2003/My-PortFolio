@@ -78,7 +78,7 @@ nav ul li a {
     color: yellow;
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 1024px) {
     #Hero {
         font-size: 35px;
@@ -92,7 +92,7 @@ nav ul li a {
     }
 }
 
-/* Tablet View */
+
 @media screen and (max-width: 768px) {
     nav ul {
         display: none;
@@ -125,7 +125,7 @@ nav ul li a {
     }
 }
 
-/* Mobile View */
+
 @media screen and (max-width: 480px) {
     #Hero {
         font-size: 25px;
@@ -256,7 +256,7 @@ nav ul li a {
     margin-top: 10px;
 }
 
-/* Responsive Media Queries */
+
 
 @media screen and (max-width: 1024px) {
     #aboutme_body {
@@ -345,7 +345,7 @@ nav ul li a {
     color: #f39c12;
 }
 
-/* Project Containers */
+
 .project {
     height: auto;
     background: #1a1a1a;
@@ -410,7 +410,7 @@ nav ul li a {
     background: #f39c12;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
     .project {
         width: 90%;
@@ -579,7 +579,7 @@ h3 {
     font-style: italic;
 }
 
-/* Media Queries for Responsiveness */
+
 
 @media screen and (max-width: 1200px) {
     .skills {
@@ -638,9 +638,7 @@ h3 {
         padding: 20px;
     }
 }
-/* Assignment section */
 
-/* Section Background */
 #assignments {
     text-align: center;
     padding: 50px 20px;
@@ -683,7 +681,7 @@ h3 {
     box-shadow: 0 8px 20px rgba(179, 0, 255, 0.6);
 }
 
-/* Assignment Image */
+
 .assignment-item img {
     width: 80px;
     height: 80px;
@@ -691,7 +689,7 @@ h3 {
     filter: drop-shadow(0 0 8px rgba(0, 150, 255, 0.6));
 }
 
-/* Icon Container */
+
 .assignment-item .icons {
     margin-top: 12px;
 }
@@ -710,7 +708,7 @@ h3 {
     opacity: 1;
 }
 
-/* Media Query for Smaller Screens */
+
 @media screen and (max-width: 768px) {
     #assignments h2 {
         font-size: 24px;
@@ -737,7 +735,6 @@ h3 {
     }
 }
 
-/* Media Query for Extra Small Screens */
 @media screen and (max-width: 480px) {
     #assignments h2 {
         font-size: 20px;
@@ -762,9 +759,9 @@ h3 {
         height: 16px;
     }
 }
-/* Gallery Section */
+                                /* Gallery Section */
 
-/* Section Background */
+
 section {
     background: linear-gradient(to right, black, gray, gray);
     padding: 50px 20px;
@@ -781,7 +778,7 @@ section {
     border-radius: 10px;
 }
 
-/* Description */
+
 pre {
     font-size: 14px;
     color: #cfd8dc;
@@ -791,7 +788,6 @@ pre {
     text-align: center;
 }
 
-/* Highlighted text in the description */
 pre span {
     color: #ffcc00;
     font-weight: bold;
@@ -810,13 +806,11 @@ section img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Hover Effect */
 section img:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 150, 255, 0.6);
 }
 
-/* Media Query for Tablet and Smaller Screens */
 @media screen and (max-width: 768px) {
     /* Gallery Title */
     #gallery {
@@ -836,13 +830,11 @@ section img:hover {
         height: 120px;
     }
 
-    /* Adjust padding of the section */
     section {
         padding: 40px 15px;
     }
 }
 
-/* Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
     /* Gallery Title */
     #gallery {
@@ -863,12 +855,10 @@ section img:hover {
         height: 100px;
     }
 
-    /* Adjust section padding */
     section {
         padding: 30px 10px;
     }
 
-    /* Stack the images vertically */
     section img {
         margin: 5px auto;
         display: block;
@@ -877,7 +867,6 @@ section img:hover {
 
 /*                            !*Activity Section*!*/
 
-/* Activity Section */
 
 /* Section Background */
 section {
@@ -938,7 +927,7 @@ section img {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover effect on images */
+
 section img:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 25px rgba(0, 150, 255, 0.7);
@@ -956,15 +945,15 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Hover effect on buttons */
+
 button:hover {
     background-color: #ffc107;
     transform: scale(1.05);
 }
 
-/* Media Query for Tablet and Smaller Screens */
+
 @media screen and (max-width: 768px) {
-    /* Adjust heading font size */
+
     #activity {
         font-size: 24px;
     }
@@ -991,35 +980,31 @@ button:hover {
     }
 }
 
-/* Media Query for Mobile Devices */
+
 @media screen and (max-width: 480px) {
-    /* Adjust heading font size */
     #activity {
         font-size: 20px;
     }
 
-    /* Adjust subheading font size */
     h5 {
         font-size: 12px;
     }
 
-    /* Adjust image size */
     section img {
         width: 120px;
         height: 120px;
     }
 
-    /* Adjust button size */
     button {
         padding: 6px 12px;
     }
 
-    /* Adjust section padding */
+
     section {
         padding: 30px 10px;
     }
 
-    /* Stack elements vertically */
+
     section div {
         display: flex;
         flex-direction: column;
@@ -1028,103 +1013,221 @@ button:hover {
 }
 
                             /*Contact*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #3a4e72);
+    color: white;
+    text-align: center;
+}
+
+.contact {
+    padding: 50px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.title span {
+    color: #a14cff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid #317aff;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
+}
+
+.left {
+    width: 45%;
+    text-align: left;
+    padding: 20px;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.contact-info-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-img {
+    width: 140px;
+    height: 155px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.right {
+    width: 50%;
+    padding: 20px;
+    background: rgba(0, 0, 255, 0.3);
+    border-radius: 10px;
+    border: 2px solid #317aff;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+    display: block;
+}
+
+.input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #6a89cc;
+    color: white;
+    font-size: 14px;
+}
+
+.textarea {
+    height: 80px;
+}
+
+.submit-btn {
+    background: yellow;
+    color: black;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-style: italic;
+}
+
+.submit-btn:hover {
+    background: deepskyblue;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
 /* Responsive Design */
-@media screen and (max-width: 1024px) {
-    section div {
-        width: 90%;
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
     }
 
-    #contact {
-        font-size: 35px;
-    }
-
-    section input[type="text"] {
-        width: 90%;
-        font-size: 14px;
-    }
-
-    section button {
-        font-size: 18px;
-        padding: 8px 25px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    section div {
-        width: 95%;
-        padding: 15px;
-    }
-
-    #contact {
-        font-size: 30px;
-    }
-
-    section input[type="text"] {
+    .left, .right {
         width: 100%;
-        font-size: 14px;
-        padding: 8px;
+        text-align: center;
+        padding: 10px;
     }
 
-    section button {
-        font-size: 16px;
-        padding: 8px 20px;
-    }
-
-    section h4 {
-        font-size: 18px;
-    }
-
-    section p {
-        font-size: 14px;
-    }
-
-    section img[title="ContactImage"] {
+    .profile-img {
         width: 100px;
         height: 100px;
     }
 
-    section a img {
-        width: 25px;
-        height: 25px;
+    .contact-details p {
+        justify-content: center;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    section div {
-        width: 100%;
-        padding: 10px;
+    .title {
+        font-size: 24px;
     }
 
-    #contact {
-        font-size: 25px;
+    .contact-container {
+        padding: 15px;
     }
 
-    section input[type="text"] {
+    .input, .textarea {
         font-size: 12px;
-        padding: 6px;
+        padding: 8px;
     }
 
-    section button {
-        font-size: 14px;
-        padding: 6px 15px;
-    }
-
-    section h4 {
+    .submit-btn {
         font-size: 16px;
-    }
-
-    section p {
-        font-size: 12px;
-    }
-
-    section img[title="ContactImage"] {
-        width: 80px;
-        height: 80px;
-    }
-
-    section a img {
-        width: 20px;
-        height: 20px;
+        padding: 10px;
+        width: 120px;
     }
 }
