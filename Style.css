@@ -563,6 +563,9 @@ h2 {
     background: #151515;
     padding: 20px;
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+
 }
 
 h2 .highlight {
@@ -739,7 +742,7 @@ h3 {
 }
 
 #assignments h2 span {
-    color: #b300ff;
+    color: #4CC9FE;
 }
 
 /* Grid Layout */
@@ -861,8 +864,14 @@ section {
     letter-spacing: 2px;
     padding: 10px 20px;
     border-radius: 10px;
+    color: #4CC9FE;
 }
 
+/*.pre{*/
+/*    position: absolute;*/
+/*    right: 10px;*/
+/*    align-items: center;*/
+/*}*/
 
 pre {
     font-size: 14px;
@@ -871,6 +880,9 @@ pre {
     margin: 20px auto;
     max-width: 800px;
     text-align: center;
+    position: relative;
+    right: 150px;
+
 }
 
 pre span {
@@ -977,20 +989,20 @@ section {
 }
 
 #activity {
-    color: #fff;
+    color: #4CC9FE;
 }
 
 #activity::before {
-    content: "WANNA SEE MY ";
+    /*content: "WANNA SEE MY ";*/
 }
 
 #activity::after {
-    content: "ACTIVITY";
+    /*content: "ACTIVITY";*/
     color: #b388eb;
 }
 
 #activity::after {
-    content: " SIDE ?";
+    /*content: " SIDE ?";*/
     color: #fff;
 }
 
@@ -999,14 +1011,14 @@ b.b1{
     margin: 30px 0 10px;
     font-size: 16px;
     letter-spacing: 1px;
-    color: yellow;
+    color: #4CC9FE;
 }
 
 b.b2 {
     margin: 30px 0 10px;
     font-size: 16px;
     letter-spacing: 1px;
-    color: yellow;
+    color: #4CC9FE;
 }
 
 /* Images */
@@ -1040,7 +1052,7 @@ section img:hover {
 
 /* Buttons */
 button.b01 {
-    background-color: #ffeb3b;
+    background-color: #4CC9FE;
     border: none;
     padding: 10px 20px;
     margin-top: 5px;
@@ -1051,7 +1063,7 @@ button.b01 {
 }
 
 button.b02 {
-    background-color: #ffeb3b;
+    background-color: #4CC9FE;
     border: none;
     padding: 10px 20px;
     margin-top: 5px;
@@ -1154,7 +1166,7 @@ body {
 }
 
 .title span {
-    color: #a14cff;
+    color: #4CC9FE;
 }
 
 .contact-container {
@@ -1189,7 +1201,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: yellow;
+    color: #4CC9FE;
     background:#151515 ;
 }
 
@@ -1225,7 +1237,7 @@ body {
     padding: 20px;
     background: rgba(0, 0, 255, 0.3);
     border-radius: 10px;
-    border: 2px solid #317aff;
+    border: 2px solid #4CC9FE;
     align-items: center;
 }
 
@@ -1302,6 +1314,7 @@ label {
     margin-top: 20px;
     font-size: 12px;
     opacity: 0.8;
+    color: #4CC9FE;
 }
 
 /* Responsive Design */
