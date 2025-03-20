@@ -10,6 +10,45 @@ header {
     background: #151515;
 }
 
+.home1:hover a{
+    transform: scale(1.05);
+    color: #4CC9FE;
+}
+
+ .about2:hover a{
+     transform: scale(1.05);
+     color: #4CC9FE;
+ }
+
+ .project3:hover a{
+     transform: scale(1.05);
+     color: #4CC9FE;
+ }
+
+ .skills4:hover a{
+     transform: scale(1.05);
+     color: #4CC9FE;
+ }
+ .activity5:hover a{
+     transform: scale(1.05);
+     color: #4CC9FE;
+ }
+
+ .gallery6:hover a{
+     transform: scale(1.05);
+     color: #4CC9FE;
+ }
+
+ .assignment7:hover a{
+     transform: scale(1.05);
+     color: #4CC9FE;
+ }
+
+ .contact8:hover a{
+     transform: scale(1.05);
+     color: #4CC9FE;
+ }
+
 /* Basic Navigation Styles */
 
 
@@ -1005,79 +1044,70 @@ section {
     /*content: " SIDE ?";*/
     color: #fff;
 }
-
-/* Subheadings */
-b.b1{
-    margin: 30px 0 10px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #4CC9FE;
+.container {
+    display: flex;
+    justify-content: center; /* Center items */
+    align-items: center;
+    gap: 100px; /* Adjust space between images */
+    margin-top: 30px;
 }
 
-b.b2 {
-    margin: 30px 0 10px;
-    font-size: 16px;
+/* Each activity block */
+.image1, .image2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title Text */
+.b1, .b2 {
+    margin-bottom: 10px;
+    font-size: 20px;
     letter-spacing: 1px;
+    font-weight: bold;
     color: #4CC9FE;
+  font-family: "Kristen ITC";
 }
 
 /* Images */
-section img.img1 {
-    width: 160px;
-    height: 160px;
+.img1, .img2 {
+    width: 300px; /* Make images bigger */
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
     margin-bottom: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-section img.img2 {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-    margin-bottom: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-
-section img:hover {
+.img1:hover, .img2:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 25px rgba(0, 150, 255, 0.7);
+    box-shadow: 0 8px 30px rgba(76, 201, 254, 0.7);
 }
 
 /* Buttons */
-button.b01 {
-    background-color: #4CC9FE;
+.b01, .b02 {
+    background-color: #4CC9FE; /* Yellow like the second image */
     border: none;
-    padding: 10px 20px;
-    margin-top: 5px;
+    padding: 12px 24px;
     border-radius: 50px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button.b02 {
-    background-color: #4CC9FE;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 5px;
-    border-radius: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+.b01:hover, .b02:hover {
+    background-color: #ffc107; /* Slightly darker yellow on hover */
+    transform: scale(1.05);
 }
-
-
 button:hover {
     background-color: #ffc107;
     transform: scale(1.05);
 }
+
 
 
 @media screen and (max-width: 768px) {
