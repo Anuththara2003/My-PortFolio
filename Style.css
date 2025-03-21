@@ -1047,7 +1047,85 @@ h3 {
     opacity: 1;
 }
 
+/* For Mobile Small - 320px */
+@media screen and (max-width: 320px) {
+    #assignments h2 {
+        font-size: 18px;
+    }
 
+    .assignment-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .assignment-item {
+        padding: 10px;
+    }
+
+    .assignment-item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .assignment-item .icons a img {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* For Mobile Medium - 375px */
+@media screen and (max-width: 375px) {
+    #assignments h2 {
+        font-size: 20px;
+    }
+
+    .assignment-container {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 12px;
+    }
+
+    .assignment-item {
+        padding: 12px;
+    }
+
+    .assignment-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .assignment-item .icons a img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* For Mobile Large - 425px */
+@media screen and (max-width: 425px) {
+    #assignments h2 {
+        font-size: 22px;
+    }
+
+    .assignment-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+    }
+
+    .assignment-item {
+        padding: 14px;
+    }
+
+    .assignment-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .assignment-item .icons a img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* For Tablet - 768px */
 @media screen and (max-width: 768px) {
     #assignments h2 {
         font-size: 24px;
@@ -1074,30 +1152,30 @@ h3 {
     }
 }
 
-@media screen and (max-width: 480px) {
-    #assignments h2 {
-        font-size: 20px;
-    }
-
+/* For Laptop - 1024px */
+@media screen and (max-width: 1024px) {
     .assignment-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 25px;
     }
 
     .assignment-item {
-        padding: 12px;
-    }
-
-    .assignment-item img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .assignment-item .icons a img {
-        width: 16px;
-        height: 16px;
+        padding: 18px;
     }
 }
+
+/* For Large Laptop - 1440px */
+@media screen and (max-width: 1440px) {
+    .assignment-container {
+        max-width: 1000px;
+        gap: 30px;
+    }
+
+    .assignment-item {
+        padding: 20px;
+    }
+}
+
                                 /* Gallery Section */
 
 
