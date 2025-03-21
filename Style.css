@@ -1792,7 +1792,98 @@ label {
     color: #4CC9FE;
 }
 
-/* Responsive Design */
+/* For Mobile Small - 320px */
+@media screen and (max-width: 320px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .contact-container {
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 90px;
+    }
+
+    .input, .textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 8px;
+        width: 110px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* For Mobile Medium - 375px */
+@media screen and (max-width: 375px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .contact-container {
+        padding: 12px;
+    }
+
+    .profile-img {
+        width: 90px;
+        height: 100px;
+    }
+
+    .input, .textarea {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .submit-btn {
+        font-size: 15px;
+        padding: 9px;
+        width: 120px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* For Mobile Large - 425px */
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .contact-container {
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 110px;
+    }
+
+    .input, .textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 10px;
+        width: 130px;
+    }
+}
+
+/* For Tablet - 768px */
 @media screen and (max-width: 768px) {
     .contact-container {
         flex-direction: column;
@@ -1807,8 +1898,8 @@ label {
     }
 
     .profile-img {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 130px;
     }
 
     .contact-details p {
@@ -1826,23 +1917,49 @@ label {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .title {
-        font-size: 24px;
+/* For Laptop - 1024px */
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        max-width: 900px;
+        padding: 25px;
     }
 
-    .contact-container {
-        padding: 15px;
+    .profile-img {
+        width: 130px;
+        height: 140px;
     }
 
     .input, .textarea {
-        font-size: 12px;
-        padding: 8px;
+        font-size: 16px;
     }
 
     .submit-btn {
-        font-size: 16px;
-        padding: 10px;
-        width: 120px;
+        font-size: 18px;
+        padding: 12px;
+        width: 150px;
+    }
+}
+
+/* For Large Laptop - 1440px */
+@media screen and (max-width: 1440px) {
+    .contact-container {
+        max-width: 1100px;
+        padding: 30px;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 150px;
+    }
+
+    .input, .textarea {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .submit-btn {
+        font-size: 20px;
+        padding: 14px;
+        width: 160px;
     }
 }
