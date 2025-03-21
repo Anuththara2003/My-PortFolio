@@ -1469,64 +1469,149 @@ button:hover {
 }
 
 
-
-@media screen and (max-width: 768px) {
-
+/* For Mobile Small - 320px */
+@media screen and (max-width: 320px) {
     #activity {
-        font-size: 24px;
+        font-size: 18px;
     }
 
-    /* Adjust subheading font size */
-    h5 {
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .img1, .img2 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .b1, .b2 {
+        font-size: 16px;
+    }
+
+    .b01, .b02 {
+        padding: 6px 12px;
         font-size: 14px;
     }
 
-    /* Adjust image size */
-    section img {
+    section {
+        padding: 25px 8px;
+    }
+}
+
+/* For Mobile Medium - 375px */
+@media screen and (max-width: 375px) {
+    #activity {
+        font-size: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .img1, .img2 {
         width: 140px;
         height: 140px;
     }
 
-    /* Adjust button padding */
-    button {
-        padding: 8px 16px;
+    .b1, .b2 {
+        font-size: 18px;
     }
 
-    /* Adjust section padding */
+    .b01, .b02 {
+        padding: 8px 14px;
+        font-size: 15px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+}
+
+/* For Mobile Large - 425px */
+@media screen and (max-width: 425px) {
+    #activity {
+        font-size: 22px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .img1, .img2 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .b1, .b2 {
+        font-size: 20px;
+    }
+
+    .b01, .b02 {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+
+    section {
+        padding: 35px 12px;
+    }
+}
+
+/* For Tablet - 768px */
+@media screen and (max-width: 768px) {
+    #activity {
+        font-size: 24px;
+    }
+
+    .container {
+        gap: 60px;
+    }
+
+    .img1, .img2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .b01, .b02 {
+        padding: 10px 20px;
+    }
+
     section {
         padding: 40px 15px;
     }
 }
 
-
-@media screen and (max-width: 480px) {
-    #activity {
-        font-size: 20px;
+/* For Laptop - 1024px */
+@media screen and (max-width: 1024px) {
+    .container {
+        gap: 80px;
     }
 
-    h5 {
-        font-size: 12px;
+    .img1, .img2 {
+        width: 250px;
+        height: 250px;
     }
-
-    section img {
-        width: 120px;
-        height: 120px;
-    }
-
-    button {
-        padding: 6px 12px;
-    }
-
 
     section {
-        padding: 30px 10px;
+        padding: 45px 18px;
+    }
+}
+
+/* For Large Laptop - 1440px */
+@media screen and (max-width: 1440px) {
+    .container {
+        gap: 100px;
     }
 
+    .img1, .img2 {
+        width: 280px;
+        height: 280px;
+    }
 
-    section div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    section {
+        padding: 50px 20px;
     }
 }
 
