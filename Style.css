@@ -1238,45 +1238,46 @@ section img:hover {
     box-shadow: 0 6px 20px rgba(0, 150, 255, 0.6);
 }
 
-@media screen and (max-width: 768px) {
-    /* Gallery Title */
+/* For Mobile Small - 320px */
+@media screen and (max-width: 320px) {
     #gallery {
-        font-size: 24px;
+        font-size: 18px;
     }
 
-    /* Description */
     pre {
-        font-size: 13px;
-        margin: 15px auto;
-        max-width: 700px;
+        font-size: 11px;
+        margin: 8px auto;
+        max-width: 85%;
+        padding: 0 8px;
     }
 
-    /* Gallery Images */
     section img {
-        width: 120px;
-        height: 120px;
+        width: 90px;
+        height: 90px;
     }
 
     section {
-        padding: 40px 15px;
+        padding: 25px 8px;
+    }
+
+    section img {
+        margin: 4px auto;
+        display: block;
     }
 }
 
-@media screen and (max-width: 480px) {
-    /* Gallery Title */
+/* For Mobile Medium - 375px */
+@media screen and (max-width: 375px) {
     #gallery {
         font-size: 20px;
     }
 
-    /* Description */
     pre {
         font-size: 12px;
         margin: 10px auto;
         max-width: 90%;
-        padding: 0 10px;
     }
 
-    /* Gallery Images */
     section img {
         width: 100px;
         height: 100px;
@@ -1288,9 +1289,77 @@ section img:hover {
 
     section img {
         margin: 5px auto;
-        display: block;
     }
 }
+
+/* For Mobile Large - 425px */
+@media screen and (max-width: 425px) {
+    #gallery {
+        font-size: 22px;
+    }
+
+    pre {
+        font-size: 12px;
+        margin: 12px auto;
+        max-width: 95%;
+    }
+
+    section img {
+        width: 110px;
+        height: 110px;
+    }
+
+    section {
+        padding: 35px 12px;
+    }
+}
+
+/* For Tablet - 768px */
+@media screen and (max-width: 768px) {
+    #gallery {
+        font-size: 24px;
+    }
+
+    pre {
+        font-size: 13px;
+        margin: 15px auto;
+        max-width: 700px;
+    }
+
+    section img {
+        width: 120px;
+        height: 120px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
+
+/* For Laptop - 1024px */
+@media screen and (max-width: 1024px) {
+    section img {
+        width: 130px;
+        height: 130px;
+    }
+
+    section {
+        padding: 45px 18px;
+    }
+}
+
+/* For Large Laptop - 1440px */
+@media screen and (max-width: 1440px) {
+    section img {
+        width: 140px;
+        height: 140px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+}
+
 
 /*                            !*Activity Section*!*/
 
