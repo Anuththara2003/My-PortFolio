@@ -652,17 +652,60 @@ div.additional-socials {
 }
 
 
-@media (max-width: 1024px) {
+/* For Mobile Small - 320px */
+@media screen and (max-width: 320px) {
+    .section-title {
+        font-size: 18px;
+    }
     .project {
-        width: 90%;
+        width: 100%;
+        padding: 10px;
+    }
+    .project-images {
+        flex-direction: column;
+        align-items: center;
     }
     .project-images img {
-        width: 400px;
-        height: 250px;
+        width: 90%;
+        height: auto;
+    }
+    .github-link {
+        font-size: 12px;
+        padding: 5px 10px;
     }
 }
 
-@media (max-width: 768px) {
+/* For Mobile Medium - 375px */
+@media screen and (max-width: 375px) {
+    .section-title {
+        font-size: 20px;
+    }
+    .project-images img {
+        width: 95%;
+        height: auto;
+    }
+    .github-link {
+        font-size: 13px;
+    }
+}
+
+/* For Mobile Large - 425px */
+@media screen and (max-width: 425px) {
+    .section-title {
+        font-size: 22px;
+    }
+    .project {
+        width: 95%;
+        padding: 15px;
+    }
+    .project-images img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* For Tablet - 768px */
+@media screen and (max-width: 768px) {
     .section-title {
         font-size: 24px;
     }
@@ -679,26 +722,28 @@ div.additional-socials {
     }
 }
 
-@media (max-width: 480px) {
-    .section-title {
-        font-size: 20px;
-    }
+/* For Laptop - 1024px */
+@media screen and (max-width: 1024px) {
     .project {
-        padding: 15px;
-    }
-    .project-images {
-        flex-direction: column;
-        align-items: center;
+        width: 90%;
     }
     .project-images img {
-        width: 90%;
-        height: auto;
-    }
-    .github-link {
-        font-size: 12px;
-        padding: 5px 10px;
+        width: 400px;
+        height: 250px;
     }
 }
+
+/* For Large Laptop - 1440px */
+@media screen and (max-width: 1440px) {
+    .project {
+        width: 80%;
+    }
+    .project-images img {
+        width: 500px;
+        height: 300px;
+    }
+}
+
 
 
 
