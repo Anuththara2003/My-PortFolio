@@ -141,20 +141,61 @@ b{
 }
 
 
-@media screen and (max-width: 1024px) {
+/* For Mobile Small - 320px */
+@media screen and (max-width: 320px) {
     #Hero {
-        font-size: 35px;
-        height: 80vh;
+        font-size: 22px;
+        height: 55vh;
     }
     #Hero p {
-        font-size: 25px;
+        font-size: 16px;
     }
     .name {
-        font-size: 45px;
+        font-size: 30px;
+    }
+    nav img {
+        width: 20px;
+        height: 20px;
     }
 }
 
+/* For Mobile Medium - 375px */
+@media screen and (max-width: 375px) {
+    #Hero {
+        font-size: 24px;
+        height: 58vh;
+    }
+    #Hero p {
+        font-size: 18px;
+    }
+    .name {
+        font-size: 32px;
+    }
+    nav img {
+        width: 22px;
+        height: 22px;
+    }
+}
 
+/* For Mobile Large - 425px */
+@media screen and (max-width: 425px) {
+    #Hero {
+        font-size: 26px;
+        height: 60vh;
+    }
+    #Hero p {
+        font-size: 20px;
+    }
+    .name {
+        font-size: 35px;
+    }
+    nav img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* For Tablet - 768px */
 @media screen and (max-width: 768px) {
     nav ul {
         display: none;
@@ -185,19 +226,45 @@ b{
     .name {
         font-size: 40px;
     }
+    nav img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
-
-@media screen and (max-width: 480px) {
+/* For Laptop - 1024px */
+@media screen and (max-width: 1024px) {
     #Hero {
-        font-size: 25px;
-        height: 60vh;
+        font-size: 35px;
+        height: 80vh;
     }
     #Hero p {
-        font-size: 18px;
+        font-size: 25px;
     }
     .name {
-        font-size: 35px;
+        font-size: 45px;
+    }
+    nav img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* For Large Laptop - 1440px */
+@media screen and (max-width: 1440px) {
+    #Hero {
+        font-size: 40px;
+        height: 90vh;
+    }
+    #Hero p {
+        font-size: 28px;
+    }
+    .name {
+        font-size: 50px;
+    }
+    nav img {
+        width: 40px;
+        height: 40px;
     }
 }
                                             /*About me*/
