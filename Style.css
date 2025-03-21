@@ -869,65 +869,116 @@ h3 {
     font-style: italic;
 }
 
-
-
-@media screen and (max-width: 1200px) {
+/* For Mobile Small - 320px */
+@media screen and (max-width: 320px) {
+    h2 {
+        font-size: 18px;
+    }
     .skills {
-        grid-template-columns: repeat(4, 120px);
-        gap: 30px;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
-
-    .education {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
+    .skill-item {
+        width: 100px;
+        height: 100px;
     }
-
+    .skill-item img {
+        width: 60px;
+        height: 60px;
+    }
     .education-item {
-        width: 250px;
+        width: 100%;
+    }
+    .description p {
+        font-size: 16px;
+        padding: 15px;
     }
 }
 
-@media screen and (max-width: 768px) {
+/* For Mobile Medium - 375px */
+@media screen and (max-width: 375px) {
     h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
+    .skills {
+        grid-template-columns: repeat(2, 100px);
+        gap: 15px;
+    }
+    .skill-item {
+        width: 110px;
+        height: 110px;
+    }
+    .skill-item img {
+        width: 65px;
+        height: 65px;
+    }
+    .education-item {
+        width: 95%;
+    }
+}
 
+/* For Mobile Large - 425px */
+@media screen and (max-width: 425px) {
+    h2 {
+        font-size: 22px;
+    }
     .skills {
         grid-template-columns: repeat(2, 120px);
         gap: 20px;
     }
+    .education-item {
+        width: 90%;
+    }
+}
 
+/* For Tablet - 768px */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+    .skills {
+        grid-template-columns: repeat(2, 120px);
+        gap: 20px;
+    }
     .education {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-
     .education-item {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    h2 {
-        font-size: 20px;
-    }
-
+/* For Laptop - 1024px */
+@media screen and (max-width: 1024px) {
     .skills {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: repeat(3, 120px);
+        gap: 30px;
     }
-
+    .education {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
     .education-item {
-        width: 90%;
-    }
-
-    .description p {
-        font-size: 18px;
-        padding: 20px;
+        width: 250px;
     }
 }
+
+/* For Large Laptop - 1440px */
+@media screen and (max-width: 1440px) {
+    .skills {
+        grid-template-columns: repeat(4, 120px);
+        gap: 30px;
+    }
+}
+
+
+
+                                            /*Assignment*/
+
+
 
 #assignments {
     background: #151515;
