@@ -66,17 +66,15 @@ body {
     color: white; /* Light icon for dark background */
 }
 
-
 /* Hero Section */
 .herosec {
     min-height: 80vh;
     display: flex;
     align-items: center;
-    padding: 0 10%;
-    background: #151515; /* Dark background */
-    text-align: center; /* Center align text */
-    position: relative; /* Needed for pseudo-element positioning */
-    overflow: hidden; /* Ensure border stays within bounds */
+    padding: 0 5%;
+    background: #151515;
+    position: relative;
+    overflow: hidden;
 }
 
 .herosec::before {
@@ -86,38 +84,49 @@ body {
     left: 20px;
     right: 20px;
     bottom: 20px;
-    border: 4px solid rgba(76, 201, 254, 0.8); /* Changed to solid style, width 4px, transparency 80% */
-    border-radius: 20px; /* Keeping rounded corners at 20px */
-    box-shadow: 0 0 15px rgba(76, 201, 254, 0.5), 0 0 30px rgba(76, 201, 254, 0.3); /* Subtle blue glow effect */
-    z-index: 0; /* Behind the content */
-    animation: borderPulse 4s infinite; /* Animation for border effect */
+    border: 4px solid rgba(76, 201, 254, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(76, 201, 254, 0.5), 0 0 30px rgba(76, 201, 254, 0.3);
+    z-index: 0;
+    animation: borderPulse 4s infinite;
 }
 
 @keyframes borderPulse {
     0% { border-color: rgba(76, 201, 254, 0.8); }
-    50% { border-color: rgba(58, 123, 200, 0.8); } /* Slightly darker blue with transparency */
+    50% { border-color: rgba(58, 123, 200, 0.8); }
     100% { border-color: rgba(76, 201, 254, 0.8); }
 }
 
-.herosec div {
-    max-width: 600px;
-    margin: 0 auto; /* Center the content */
-    position: relative; /* Ensure content is above border */
-    z-index: 1; /* Above the border */
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
 }
 
 .b1 {
-    font-size: 2.5rem; /* Increase size for "Hello," and "Hear" */
-    color: white; /* Light text for dark background */
-    line-height: 1.2; /* Adjust line height for better spacing */
+    font-size: 2.5rem;
+    color: white;
+    line-height: 1.2;
 }
 
-.herosec .wel {
-    display: inline-block; /* Make "Welcome" inline-block for better control */
-    font-size: 2rem; /* Slightly smaller size for "Welcome" */
-    color: #4CC9FE; /* Blue accent */
-    animation: moveDown 2s infinite forwards; /* Animation */
-    margin-top: 10px; /* Add spacing between "Hear" and "Welcome" */
+.wel {
+    display: inline-block;
+    font-size: 2rem;
+    color: #4CC9FE;
+    animation: moveDown 2s infinite forwards;
+    margin-top: 10px;
 }
 
 @keyframes moveDown {
@@ -131,11 +140,186 @@ body {
     }
 }
 
-.herosec p {
+.text-content p {
     margin-top: 20px;
     line-height: 1.6;
-    color: #ccc; /* Light gray for readability */
+    color: #ccc;
+    max-width: 500px;
 }
+
+.animation-content {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-animation {
+    width: 100%;
+    max-width: 400px; /* Maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add slight rounding to edges */
+    object-fit: contain; /* Ensure the GIF/Video fits nicely */
+}
+
+/* Hero Section Media Queries */
+/* Extra Small Devices (320px) */
+@media (max-width: 320px) {
+    .herosec {
+        min-height: 60vh;
+        padding: 0 3%;
+    }
+
+    .herosec::before {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-width: 2px;
+    }
+
+    .b1 {
+        font-size: 1.5rem;
+    }
+
+    .wel {
+        font-size: 1.2rem;
+    }
+
+    .text-content p {
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+
+    .hero-animation {
+        max-width: 200px;
+    }
+}
+
+/* Small Mobile Devices (375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    .herosec {
+        min-height: 65vh;
+        padding: 0 4%;
+    }
+
+    .herosec::before {
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        border-width: 3px;
+    }
+
+    .b1 {
+        font-size: 1.7rem;
+    }
+
+    .wel {
+        font-size: 1.3rem;
+    }
+
+    .text-content p {
+        font-size: 0.85rem;
+        margin-top: 12px;
+    }
+
+    .hero-animation {
+        max-width: 220px;
+    }
+}
+
+/* Large Mobile Devices (425px) */
+@media (min-width: 376px) and (max-width: 425px) {
+    .herosec {
+        min-height: 70vh;
+    }
+
+    .b1 {
+        font-size: 1.9rem;
+    }
+
+    .wel {
+        font-size: 1.4rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+        margin-top: 15px;
+    }
+
+    .hero-animation {
+        max-width: 240px;
+    }
+}
+
+/* Tablets (768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .text-content p {
+        margin: 15px auto;
+    }
+
+    .hero-animation {
+        max-width: 300px;
+    }
+}
+
+/* Small Laptops (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-content {
+        max-width: 900px;
+        gap: 30px;
+    }
+
+    .b1 {
+        font-size: 2.3rem;
+    }
+
+    .wel {
+        font-size: 1.8rem;
+    }
+
+    .hero-animation {
+        max-width: 350px;
+    }
+}
+
+/* Large Laptops and Desktops (1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .hero-content {
+        max-width: 1200px;
+    }
+
+    .b1 {
+        font-size: 2.5rem;
+    }
+
+    .wel {
+        font-size: 2rem;
+    }
+
+    .hero-animation {
+        max-width: 400px;
+    }
+}
+
+/* Extra Large Screens (above 1440px) */
+@media (min-width: 1441px) {
+    .hero-content {
+        max-width: 1400px;
+    }
+}
+
 /* About Me Section */
 #about_me {
     padding: 80px 5%;
@@ -146,31 +330,71 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    align-items: center; /* Vertically center the image and content */
+    justify-content: center; /* Horizontally center the content */
 }
 
 .image-section {
     flex: 1;
     min-width: 300px;
+    display: flex;
+    justify-content: center; /* Center the image */
+    position: relative; /* For pseudo-element positioning */
 }
 
 .image-section img {
     width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    max-width: 350px; /* Slightly smaller for better fit */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 8px 30px rgba(76, 201, 254, 0.5); /* Enhanced blue glow shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 40px rgba(76, 201, 254, 0.7); /* Enhanced glow on hover */
+}
+
+/* Light effect below the image */
+.image-section::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, rgba(76, 201, 254, 0.8), transparent);
+    filter: blur(10px);
+    z-index: -1;
 }
 
 .content-section {
     flex: 2;
     min-width: 300px;
+    text-align: center; /* Center-align text for better mobile view */
 }
 
 .hi {
     font-size: 2.5rem;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the "Hi.." text */
     gap: 10px;
     color: #4CC9FE; /* Blue accent */
+    animation: fadeIn 1.5s infinite; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .rotate-text {
@@ -178,35 +402,37 @@ body {
     font-size: 2.5rem;
     margin: 20px 0;
     color: #4CC9FE; /* Blue accent */
-    animation: text_move 2s normal forwards; /* Animation */
+    animation: text_move 2s infinite forwards; /* Slide-in animation */
 }
 
 @keyframes text_move {
     0% {
         transform: translateX(100%);
+        opacity: 0;
     }
     100% {
         transform: translateX(0);
+        opacity: 1;
     }
 }
 
 .bio-text {
-    font-size: 24px;
-    color: lightgray;
-    margin-top: 10px;
-    line-height: 1.6;
-    max-width: 500px;
-    text-align: center; /* Centered for better layout */
+    font-size: 1.2rem; /* Slightly smaller for better readability */
+    color: #d3d3d3; /* Light gray for better contrast */
+    margin: 20px auto; /* Center the text */
+    line-height: 1.8; /* Improved line spacing */
+    max-width: 600px; /* Limit width for better readability */
+    animation: fadeIn 2s infinite; /* Fade-in animation */
 }
 
 .bio-text mark {
     background: none;
-    color: #4CC9FE;
+    color: #4CC9FE; /* Blue accent */
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    animation: typing 3s steps(34, end) infinite forwards;
+    animation: typing 3s steps(34, end) forwards; /* Typing animation */
 }
 
 @keyframes typing {
@@ -220,48 +446,346 @@ body {
     }
 }
 
+/* Hire Me Button */
+.hire-me-btn {
+    background: linear-gradient(45deg, #4CC9FE, #3a7bc8); /* Gradient background */
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Slightly larger padding */
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 20px 0; /* Space above and below the button */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hire-me-btn:hover {
+    background: linear-gradient(45deg, #3a7bc8, #4CC9FE); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
 .social-container {
-    margin-top: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center social icons */
 }
 
 .main-socials {
     display: flex;
+    flex-direction: column; /* Stack icons vertically */
     align-items: center;
-    gap: 15px;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+.main-socials .social-icons {
+    display: flex;
+    gap: 20px; /* Increased gap for better spacing */
 }
 
 .main-socials img, .additional-socials img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s;
+    width: 35px; /* Slightly larger icons */
+    height: 35px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .main-socials img:hover, .additional-socials img:hover {
-    transform: scale(1.2);
-    filter: brightness(1.2); /* Brighten on hover */
-}
-
-.main-socials button {
-    background-color: #4CC9FE; /* Blue button */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.main-socials button:hover {
-    background-color: #3a7bc8; /* Darker blue on hover */
+    transform: scale(1.2); /* Zoom on hover */
+    filter: brightness(1.3); /* Brighten on hover */
 }
 
 .additional-socials {
     display: flex;
-    gap: 15px;
+    gap: 20px; /* Increased gap for better spacing */
     margin-top: 20px;
 }
 
+/* About Me Section Media Queries */
+/* Extra Small Devices (320px) */
+@media (max-width: 320px) {
+    #about_me {
+        padding: 40px 3%;
+    }
+
+    #about_me_body {
+        gap: 25px;
+    }
+
+    .image-section img {
+        max-width: 220px;
+    }
+
+    .hi {
+        font-size: 1.8rem;
+    }
+
+    .rotate-text {
+        font-size: 1.8rem;
+    }
+
+    .bio-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .hire-me-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .main-socials .social-icons {
+        gap: 15px;
+    }
+
+    .main-socials img, .additional-socials img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Small Mobile Devices (375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    #about_me {
+        padding: 50px 4%;
+    }
+
+    #about_me_body {
+        gap: 30px;
+    }
+
+    .image-section img {
+        max-width: 250px;
+    }
+
+    .hi {
+        font-size: 2rem;
+    }
+
+    .rotate-text {
+        font-size: 2rem;
+    }
+
+    .bio-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .hire-me-btn {
+        padding: 10px 22px;
+        font-size: 0.95rem;
+    }
+
+    .main-socials img, .additional-socials img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Large Mobile Devices (425px) */
+@media (min-width: 376px) and (max-width: 425px) {
+    #about_me {
+        padding: 60px 4%;
+    }
+
+    .image-section img {
+        max-width: 280px;
+    }
+
+    .hi {
+        font-size: 2.2rem;
+    }
+
+    .rotate-text {
+        font-size: 2.2rem;
+    }
+
+    .bio-text {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    .hire-me-btn {
+        padding: 11px 24px;
+    }
+
+    .main-socials img, .additional-socials img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Tablets (768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+    #about_me_body {
+        flex-direction: column;
+    }
+
+    .image-section {
+        order: 1;
+    }
+
+    .content-section {
+        order: 2;
+    }
+
+    .image-section img {
+        max-width: 300px;
+    }
+
+    .bio-text {
+        max-width: 500px;
+    }
+}
+
+/* Small Laptops (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #about_me_body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .image-section img {
+        max-width: 320px;
+    }
+
+    .content-section {
+        text-align: left;
+    }
+
+    .hi, .rotate-text {
+        justify-content: flex-start;
+    }
+
+    .bio-text {
+        margin: 20px 0;
+    }
+
+    .social-container {
+        align-items: flex-start;
+    }
+}
+
+/* Large Laptops and Desktops (1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #about_me_body {
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .image-section img {
+        max-width: 350px;
+    }
+
+    .content-section {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .hi, .rotate-text {
+        justify-content: flex-start;
+    }
+
+    .bio-text {
+        margin: 20px 0;
+        font-size: 1.2rem;
+    }
+
+    .social-container {
+        align-items: flex-start;
+    }
+}
+
+/* Extra Large Screens (above 1440px) */
+@media (min-width: 1441px) {
+    #about_me_body {
+        max-width: 1400px;
+    }
+}
+
+/* Projects Section */
+.projects-section {
+    background: #151515; /* Dark background */
+    color: white;
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-title span {
+    color: #4CC9FE; /* Blue accent */
+}
+
+.project {
+    background: #1a1a1a; /* Slightly lighter dark background */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #4CC9FE; /* Blue accent */
+    background: #151515;
+}
+
+/* Project Images Container */
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Add spacing between images */
+    margin-bottom: 20px;
+}
+
+/* Project Images */
+.project-images img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-images img:hover {
+    transform: scale(1.1);
+}
+
+/* GitHub Link */
+.github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #4CC9FE;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.github-link img {
+    width: 25px;
+    height: 25px;
+}
+
+.github-link:hover {
+    background: #f39c12;
+}
 /* Projects Section */
 .projects-section {
     background: #151515; /* Dark background */
