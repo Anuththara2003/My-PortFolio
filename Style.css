@@ -195,10 +195,14 @@ body {
     .hero-animation {
         max-width: 200px;
     }
+    animation-content{
+        max-width: 200px;
+
+    }
 }
 
 /* Small Mobile Devices (375px) */
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 374px) {
     .herosec {
         min-height: 65vh;
         padding: 0 4%;
@@ -228,10 +232,16 @@ body {
     .hero-animation {
         max-width: 220px;
     }
+
+    animation-content{
+        max-width: 700px;
+
+    }
+
 }
 
 /* Large Mobile Devices (425px) */
-@media (min-width: 376px) and (max-width: 425px) {
+@media (min-width: 375px) and (max-width: 425px) {
     .herosec {
         min-height: 70vh;
     }
@@ -251,6 +261,11 @@ body {
 
     .hero-animation {
         max-width: 240px;
+    }
+
+    animation-content{
+        max-width: 700px;
+
     }
 }
 
@@ -272,6 +287,11 @@ body {
     .hero-animation {
         max-width: 300px;
     }
+
+    animation-content{
+        max-width: 700px;
+
+    }
 }
 
 /* Small Laptops (1024px) */
@@ -292,6 +312,11 @@ body {
     .hero-animation {
         max-width: 350px;
     }
+
+    animation-content{
+        max-width: 700px;
+
+    }
 }
 
 /* Large Laptops and Desktops (1440px) */
@@ -311,12 +336,23 @@ body {
     .hero-animation {
         max-width: 400px;
     }
+
+
+    animation-content{
+        max-width: 700px;
+
+    }
 }
 
 /* Extra Large Screens (above 1440px) */
 @media (min-width: 1441px) {
     .hero-content {
         max-width: 1400px;
+    }
+
+    animation-content{
+        max-width: 700px;
+
     }
 }
 
