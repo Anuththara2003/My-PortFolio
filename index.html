@@ -165,7 +165,7 @@
             <img src="assets/Projects/project2.png" alt="Restaurant Management System">
             <img src="assets/Projects/project3.png" alt="Restaurant Management System">
         </div>
-        <a href="https://github.com/Anuththara2003" target="_blank" class="github-link">
+        <a href="https://github.com/Anuththara2003/Resturent-Mangement-System" target="_blank" class="github-link">
             <b class="view">View More On</b>
             <img src="assets/Icons/github.icon" alt="GitHub Icon">
             <b class="view">GitHub</b>
@@ -179,7 +179,7 @@
             <img src="assets/Projects/minimax.png" alt="Tic Tac Toe">
             <img src="assets/Projects/minimax2.png" alt="Tic Tac Toe">
         </div>
-        <a href="https://github.com/Anuththara2003" target="_blank" class="github-link">
+        <a href="https://github.com/Anuththara2003/Tik-Tak-Toe" target="_blank" class="github-link">
             <b class="view">View More On</b>
             <img src="assets/Icons/github.icon" alt="GitHub Icon">
             <b class="view">GitHub</b>
@@ -247,7 +247,7 @@
         <div class="assignment-item">
             <img src="assets/Assignment/assignmentImage.png" alt="Assignment" title="Assignment">
             <div class="icons">
-                <a href="https://github.com/Anuththara2003" target="_blank">
+                <a href="https://github.com/Anuththara2003/CSS_Assignment03" target="_blank">
                     <img src="assets/Icons/github.icon" alt="GithubIcon" title="Github">
                 </a>
                 <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" target="_blank">
@@ -258,7 +258,7 @@
         <div class="assignment-item">
             <img src="assets/Assignment/assignmentImage.png" alt="Assignment" title="Assignment">
             <div class="icons">
-                <a href="https://github.com/Anuththara2003" target="_blank">
+                <a href="https://github.com/Anuththara2003/CSS_Assignment_04" target="_blank">
                     <img src="assets/Icons/github.icon" alt="GithubIcon" title="Github">
                 </a>
                 <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" target="_blank">
@@ -269,7 +269,7 @@
         <div class="assignment-item">
             <img src="assets/Assignment/assignmentImage.png" alt="Assignment" title="Assignment">
             <div class="icons">
-                <a href="https://github.com/Anuththara2003" target="_blank">
+                <a href="https://github.com/Anuththara2003/My-PortFolio" target="_blank">
                     <img src="assets/Icons/github.icon" alt="GithubIcon" title="Github">
                 </a>
                 <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" target="_blank">
@@ -280,7 +280,7 @@
         <div class="assignment-item">
             <img src="assets/Assignment/assignmentImage.png" alt="Assignment" title="Assignment">
             <div class="icons">
-                <a href="https://github.com/Anuththara2003" target="_blank">
+                <a href="https://github.com/Anuththara2003/Js_Assignment_08" target="_blank">
                     <img src="assets/Icons/github.icon" alt="GithubIcon" title="Github">
                 </a>
                 <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" target="_blank">
@@ -291,7 +291,7 @@
         <div class="assignment-item">
             <img src="assets/Assignment/assignmentImage.png" alt="Assignment" title="Assignment">
             <div class="icons">
-                <a href="https://github.com/Anuththara2003" target="_blank">
+                <a href="https://github.com/Anuththara2003/Js-Assignment_09" target="_blank">
                     <img src="assets/Icons/github.icon" alt="GithubIcon" title="Github">
                 </a>
                 <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" target="_blank">
@@ -302,7 +302,7 @@
         <div class="assignment-item">
             <img src="assets/Assignment/assignmentImage.png" alt="Assignment" title="Assignment">
             <div class="icons">
-                <a href="https://github.com/Anuththara2003" target="_blank">
+                <a href="https://github.com/Anuththara2003/Pos_System_Bootstrap" target="_blank">
                     <img src="assets/Icons/github.icon" alt="GithubIcon" title="Github">
                 </a>
                 <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" target="_blank">
@@ -448,18 +448,18 @@
         <div class="right">
             <form class="contact-form">
                 <label>Name</label>
-                <input type="text" class="input" required>
+                <input id="name" type="text" class="input" required>
 
                 <label>Email</label>
-                <input type="email" class="input" required>
+                <input id="email" type="email" class="input" required>
 
-                <label>Contact No</label>
-                <input type="text" class="input" required>
+                <label>Subject</label>
+                <input id="subject" type="text" class="input" required>
 
                 <label>Message</label>
-                <textarea class="input textarea" required></textarea>
+                <textarea id="massage"  class="input textarea" required></textarea>
 
-                <button type="submit" class="submit-btn">SUBMIT</button>
+                <button id="send-btn" type="submit" class="submit-btn">SUBMIT</button>
             </form>
         </div>
     </div>
@@ -472,5 +472,35 @@
     </div>
     <p class="footer">Copyright ©. All rights reserved.<br> Design By SandaruPerera</p>
 </section>
+
+
+
+<script>
+
+    $('#send-btn').on('click', function () {
+        const phone = '94774832215';
+
+        const name = $('#name').val().trim();
+        const email = $('#email').val().trim();
+        const subject = $('#subject').val().trim();
+        const message = $('#massage').val().trim();
+
+        const fullMessage =` Contact Form Message\n\n` +
+        `Name: ${name}\n` +
+       `Email: ${email}\n `+
+        `Subject: ${subject}\n` +
+        `Message: ${message}`;
+
+        const encodedMessage = encodeURIComponent(fullMessage);
+
+
+        const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+
+        window.open(url, '_blank');
+
+
+    });
+</script>
 </body>
 </html>
