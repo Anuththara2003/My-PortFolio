@@ -8,9 +8,8 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-
 body {
-    overflow-x: hidden;
+    overflow-x: hidden ;
     background: #151515;
     color: white;
 }
@@ -71,6 +70,7 @@ body {
 
 /* Hero Section */
 .herosec {
+
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -571,7 +571,8 @@ body {
     font-size: 2.5rem;
     margin: 20px 0;
     color: #4CC9FE;
-    animation: text_move 2s infinite forwards;
+    /*overflow: hidden;*/
+    /*animation: text_move 2s infinite forwards;*/
 }
 
 @keyframes text_move {
@@ -1628,4 +1629,7 @@ body {
             padding: 20px;
         }
     }
+
 }
+
+
