@@ -24,6 +24,7 @@
 
     <link rel="icon" type="image/png" href="assets/Home/Sp-Logo.png">
     <link rel="stylesheet" href="lib/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Sandaru Anuththara - Software Engineer Portfolio</title>
 </head>
@@ -56,7 +57,8 @@
 
 <!-- Hero Section -->
 <section class="herosec">
-    <div class="hero-content animated-bg video-background">
+    <div class="hero-content animated-bg video-background" data-aos="fade-up"
+         data-aos-duration="3000">
         <video autoplay loop muted playsinline id="bg-video">
             <source src="./assets/Gallery/istockphoto-1264206256-640_adpp_is.mp4" type="video/mp4">
         </video>
@@ -87,7 +89,8 @@
 
 <!-- About Me -->
 <section id="about_me">
-    <div id="about_me_body">
+    <div id="about_me_body" data-aos="fade-up"
+         data-aos-duration="3000">
         <!-- Left Section - Profile Image -->
         <div class="image-section">
             <img src="assets/About%20Me/MyImage" alt="Profile Photo">
@@ -153,7 +156,8 @@
     <h2 class="section-title">WANNA SEE MY <span>WORK</span>?</h2>
 
     <!-- PRF Final Project -->
-    <div class="project">
+    <div class="project" data-aos="fade-up"
+         data-aos-duration="3000">
         <h3>PRF FINAL PROJECT - STUDENT MANAGEMENT</h3>
         <div class="project-images">
             <img src="assets/Projects/prf1.jpg" alt="PRF Project">
@@ -201,7 +205,8 @@
 <section id="skills-section">
     <h2>SO WHAT I HAVE <span class="highlight">LEARNED</span>?</h2>
 
-    <div class="skills">
+    <div class="skills" data-aos="fade-up"
+         data-aos-duration="3000">
         <div class="skill-item"><img src="assets/Skills/IntelliJ.png" title="IntelliJ" alt="IntelliJ"></div>
         <div class="skill-item"><img src="assets/Skills/java.jpg" title="Java" alt="Java"></div>
         <div class="skill-item"><img src="assets/Skills/js.png" title="JavaScript" alt="JavaScript"></div>
@@ -252,7 +257,8 @@
 <section id="assignments">
     <h2>JUST LOOK MY <span>ASSIGNMENTs</span>?</h2>
 
-    <div class="assignment-container">
+    <div class="assignment-container" data-aos="fade-up"
+         data-aos-duration="3000">
         <!-- Assignment Item -->
         <div class="assignment-item">
             <img src="assets/Assignment/assignmentImage.png" alt="Assignment" title="Assignment">
@@ -391,7 +397,8 @@
 
 <!-- Gallery -->
 <section class="section">
-    <div>
+    <div data-aos="fade-up"
+         data-aos-duration="3000">
         <b id="gallery">MY GALLERY</b><br><br>
         <pre class="pre">
                 I am a dedicated software engineer with a solid background in computer science and a passion for
@@ -417,7 +424,8 @@
 
 <!-- Activities -->
 <section class="act">
-    <div>
+    <div data-aos="fade-up"
+         data-aos-duration="3000">
         <b id="activity">WANNA SEE MY ACTIVITY SIDE?</b><br><br>
         <div class="container">
             <div class="image1">
@@ -439,7 +447,8 @@
 <!-- Contact -->
 <section id="Contact" class="contact">
     <h2 class="title">Con<span>tact</span></h2>
-    <div class="contact-container">
+    <div class="contact-container" data-aos="fade-up"
+         data-aos-duration="3000">
         <div class="left">
             <p class="description">
                 Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
@@ -483,7 +492,12 @@
     <p class="footer">Copyright ©. All rights reserved.<br> Design By SandaruPerera</p>
 </section>
 
+
 <script src="./lib/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 <script>
 
