@@ -1,4 +1,7 @@
 /* Global Styles */
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -68,101 +71,231 @@ body {
 
 /* Hero Section */
 .herosec {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    padding: 0 5%;
-    background: #151515;
     position: relative;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
-.herosec::before {
+.hero-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    padding: 2rem;
+    /*position: relative; !* Add this to ensure proper positioning *!*/
+}
+
+.video-background video,
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    pointer-events: none;
+    filter: brightness(0.7);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 10, 30, 0.6) 100%);
+    z-index: -1;
+}
+
+/* Blue geometric pattern overlay */
+.video-overlay:after {
     content: '';
     position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    border: 4px solid rgba(76, 201, 254, 0.8);
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(76, 201, 254, 0.5), 0 0 30px rgba(76, 201, 254, 0.3);
+    top: 0;
+    right: 0;
+    width: 100%; /* Extended to full width */
+    height: 100%;
+    background:
+            radial-gradient(circle at 80% 50%, rgba(0, 184, 255, 0.1) 0%, transparent 50%),
+            linear-gradient(135deg, transparent 0%, rgba(0, 142, 210, 0.1) 50%, transparent 100%);
     z-index: 0;
-    animation: borderPulse 4s infinite;
 }
 
-@keyframes borderPulse {
-    0% { border-color: rgba(76, 201, 254, 0.8); }
-    50% { border-color: rgba(58, 123, 200, 0.8); }
-    100% { border-color: rgba(76, 201, 254, 0.8); }
-}
-
-.hero-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
+/* Add geometric elements */
+.geometric-elements {
+    position: absolute; /* Changed to absolute positioning */
+    top: 0;
+    right: 0;
+    width: 100%; /* Extended to full width */
+    height: 100%;
     z-index: 1;
-    gap: 40px;
+    overflow: hidden;
+    pointer-events: none;
 }
 
+/* Individual geometric shapes */
+.geo-shape {
+    position: absolute;
+    border: 1px solid rgba(0, 195, 255, 0.4);
+    background-color: rgba(0, 153, 204, 0.05);
+    transform: rotate(45deg);
+    transition: all 3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.2);
+}
+
+.geo-shape:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    top: 30%;
+    right: 25%;
+    animation: float 8s infinite alternate ease-in-out;
+}
+
+.geo-shape:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    right: 15%;
+    animation: float 10s infinite alternate-reverse ease-in-out;
+}
+
+.geo-shape:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    right: 35%;
+    animation: float 7s infinite alternate ease-in-out;
+}
+
+.geo-shape:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    top: 60%;
+    right: 30%;
+    animation: float 12s infinite alternate-reverse ease-in-out;
+}
+
+.geo-shape:nth-child(5) {
+    width: 40px;
+    height: 40px;
+    top: 35%;
+    right: 20%;
+    animation: float 6s infinite alternate ease-in-out;
+}
+
+/* Add more shapes on the left side */
+.geo-shape:nth-child(6) {
+    width: 90px;
+    height: 90px;
+    top: 45%;
+    left: 25%;
+    animation: float 9s infinite alternate ease-in-out;
+}
+
+.geo-shape:nth-child(7) {
+    width: 70px;
+    height: 70px;
+    top: 65%;
+    left: 15%;
+    animation: float 11s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(45deg) translate(0, 0);
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(45deg) translate(20px, 20px);
+        opacity: 0.5;
+    }
+}
+
+/* Text content styles */
 .text-content {
-    flex: 1;
-    min-width: 300px;
-    text-align: left;
+    width: 100%; /* Full width */
+    z-index: 2;
+    color: #fff;
+    text-align: center; /* Center text */
+    padding: 0 5rem; /* Add padding on both sides */
+    max-width: 1200px; /* Limit maximum width */
+}
+
+#hero {
+    width: 100%;
+    font-size: 30px;
 }
 
 .b1 {
-    font-size: 2.5rem;
-    color: white;
-    line-height: 1.2;
+    font-size: 2.5rem; /* Increased size */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the hello welcome text */
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .wel {
-    display: inline-block;
-    font-size: 2rem;
-    color: #4CC9FE;
-    animation: moveDown 2s infinite forwards;
-    margin-top: 10px;
-}
-
-@keyframes moveDown {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+    display: inline;
+    margin: 0 0.5rem;
+    color: #00b8ff;
+    font-size: 3.5rem; /* Increased size */
+    text-shadow: 0 0 10px rgba(0, 184, 255, 0.5); /* Add glow effect */
 }
 
 .text-content p {
-    margin-top: 20px;
-    line-height: 1.6;
-    color: #ccc;
-    max-width: 500px;
+    line-height: 1.8;
+    max-width: 1000px; /* Increased max width */
+    margin: 0 auto; /* Center the paragraph */
+    font-size: 1.2rem; /* Increased paragraph text size */
 }
 
+/* Animation content area */
 .animation-content {
-    flex: 1;
-    min-width: 300px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    z-index: 2;
 }
 
 .hero-animation {
-    width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    object-fit: contain;
+    position: relative;
+    z-index: 3;
 }
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .text-content {
+        padding: 0 2rem;
+    }
+
+    #hero {
+        font-size: 24px;
+    }
+
+    .b1 {
+        font-size: 2rem;
+    }
+
+    .wel {
+        font-size: 2.5rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+}
 /* Hero Section Media Queries */
 /* Extra Small Devices (320px) */
 @media (max-width: 320px) {
@@ -347,7 +480,7 @@ body {
 /* Extra Large Screens (above 1440px) */
 @media (min-width: 1441px) {
     .hero-content {
-        max-width: 1400px;
+        /*max-width: 1400px;*/
     }
 
     animation-content{

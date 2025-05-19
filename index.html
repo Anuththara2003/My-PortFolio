@@ -29,6 +29,7 @@
 </head>
 
 <body>
+
 <!-- Header -->
 <header id="header">
     <!-- Navigation part -->
@@ -55,9 +56,24 @@
 
 <!-- Hero Section -->
 <section class="herosec">
-    <div class="hero-content">
+    <div class="hero-content animated-bg video-background">
+        <video autoplay loop muted playsinline id="bg-video">
+            <source src="./assets/Gallery/istockphoto-1264206256-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
 
-        <div class="text-content">
+        <!-- Enhanced geometric elements container with more shapes -->
+        <div class="geometric-elements">
+            <div class="geo-shape"></div>
+            <div class="geo-shape"></div>
+            <div class="geo-shape"></div>
+            <div class="geo-shape"></div>
+            <div class="geo-shape"></div>
+            <div class="geo-shape"></div>
+            <div class="geo-shape"></div>
+        </div>
+
+        <div id="hero" class="text-content">
             <b class="b1">HELLO, <h1 class="wel">WELCOME</h1> HERE</b>
             <p>
                 Beyond technical work, I enjoy collaborating with teams,
@@ -66,14 +82,8 @@
                 In addition to my technical journey, I am dedicated to continuous learning.
             </p>
         </div>
-
-        <div class="animation-content">
-            <img src="assets/Gif/download%20(1).gif" alt="Downloaded Animation" class="hero-animation">
-        </div>
     </div>
 </section>
-
-
 
 <!-- About Me -->
 <section id="about_me">
