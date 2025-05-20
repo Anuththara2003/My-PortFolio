@@ -1,5 +1,26 @@
 /* Global Styles */
 
+section#header,
+section#about_me,
+section#projects,
+section#skills-section,
+section#activity,
+section#gallery,
+section#assignments ,
+section#Contact {
+    overflow: hidden;
+    border: 1px solid #090810;
+}
+
+[data-aos] {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.aos-animate {
+    max-width: 100%;
+    overflow-x:hidden;
+}
 
 
 * {
